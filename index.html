@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mini Hackhathon</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="signup">
+            <h1>Attendance Application</h1>
+            <h2>Signup</h2>
+            <input type="text" id="signupUserFirstName" placeholder="First name" minlength="3" maxlength="20"
+                required><br>
+            <input type="text" id="signupUserLastName" placeholder="last name" minlength="1" maxlength="10"
+                required><br>
+            <input type="email" id="signupEmail" placeholder="Email" required><br>
+            <input type="password" id="signupPassword" placeholder="password"
+                pattern="^(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$" minlength="8" maxlength="20" required><br>
+            <button id="signupBtn">Signup</button><br><br>
+            <a href="./login.html">Already have an account?</a><br><br>
+        </div>
+    </div>
+    
+    <script type="module" src="./config.js"></script>
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>

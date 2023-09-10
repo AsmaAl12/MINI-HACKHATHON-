@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.main {
+    width: 90%;
+    top: 0%;
+    height: 100vh;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup,
+.login {
+    background: transparent;
+    border-radius: 20px;
+    width: 50%;
+    height: 60vh;
+    color: black;
+    border: 2px solid white;
+    box-shadow: 5px 5px 10px 10px rgb(188, 188, 188);
+    text-align: center;
+}
+
+.login h1 {
+    font-family: 'Pacifico', cursive;
+    background: transparent;
+    height: 5vh;
+    padding-top: 5px;
+    color: rgb(14, 14, 144);
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.signup h1 {
+    font-family: 'Pacifico', cursive;
+    background: transparent;
+    height: 5vh;
+    padding-top: 5px;
+    color: rgb(14, 14, 144);
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.login h2 {
+    font-family: 'Pacifico', cursive;
+    color: black;
+    background: transparent;
+    height: 5vh;
+    font-size: 25px;
+    padding-top: 5px;
+    margin-bottom: 50px;
+}
+
+.signup h2 {
+    font-family: 'Pacifico', cursive;
+    color: black;
+    background: transparent;
+    height: 5vh;
+    font-size: 25px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+.login input::placeholder {
+    margin: 5px;
+    color: grey;
+    font-weight: 500;
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
+    background: transparent;
+}
+
+.signup input::placeholder {
+    margin: 5px;
+    color: grey;
+    font-weight: 500;
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
+    background: transparent;
+}
+
+.signup input {
+    margin: 10px;
+    border: none;
+    width: 30%;
+    border-bottom: 2px solid black;
+    color: black;
+    background: transparent;
+    padding: 5px;
+    text-align: center;
+}
+
+.login input {
+    margin: 10px;
+    border: none;
+    width: 30%;
+    border-bottom: 2px solid black;
+    color: black;
+    background: transparent;
+    padding: 5px;
+    text-align: center;
+}
+
+.signup button {
+    margin-top: 20px;
+    background: rgb(14, 14, 144);
+    padding: 5px 20px;
+    border: 2px solid black;
+    color: white;
+    border-radius: 5px;
+}
+
+.login button {
+    margin-top: 20px;
+    background: rgb(14, 14, 144);
+    padding: 2px 20px;
+    border: 2px solid black;
+    color: white;
+    border-radius: 5px;
+}
+
+.signup a {
+    text-decoration: none;
+    background: transparent;
+    font-size: 15px;
+    font-weight: light;
+    color: grey;
+}
+
+.login a {
+    text-decoration: none;
+    background: transparent;
+    font-size: 15px;
+    font-weight: light;
+    color: grey;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.signup button:hover {
+    box-shadow: 2px 2px 4px 4px grey;
+}
+
+.login button:hover {
+    box-shadow: 2px 2px 4px 4px grey;
+}
+
+.signup a:hover {
+    color: rgb(21, 19, 19);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login a:hover {
+    color: rgb(21, 19, 19);
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .signup,.login {
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .main{
+        width: 100%;
+    }
+    .signup,.login {
+        width: 100%;
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .signup,.login {
+        max-width: 90%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .main{
+        height: 70vh;
+    }
+    .signup,.login {
+        width: 100%;
+    }
+
+    .signup h1,.login h1 {
+        font-size: 25px;
+    }
+
+    .signup h2, .login h2{
+        font-size: 20px;
+    }
+
+    .signup input,.login input {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .signup button,.login button {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+
+    .signup a, .login a {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .signup, .login{
+        width: 100%;
+    }
+
+    .signup h1, .login h1{
+        font-size: 20px;
+    }
+
+    .signup h2, .login h2 {
+        font-size: 20px;
+    }
+    .signup input, .login input{
+        width: 50%;
+        padding: 5px;
+    }
+    .signup input::placeholder, .login input::placeholder{
+        font-size: 10px;
+        
+    }
+
+    .signup button, .login button{
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .signup a, .login a{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 240px) {
+    .signup, .login {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .signup h1, .login h1{
+        font-size: 15px;
+    }
+
+    .signup h2, .login h2{
+        font-size: 10px;
+        height: 5vh;
+    }
+
+    .signup input, .login input {
+        padding: 5px;
+    }
+
+    .signup button, .login button{
+        padding: 8px 15px;
+        font-size: 8px;
+    }
+
+    .signup a, .login button {
+        font-size: 8px;
+    }
+}
+
+
